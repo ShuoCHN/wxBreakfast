@@ -1,0 +1,40 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{bg}}" style='height:{{Hei}}'>
+      <block wx:key="{{imgUrls}}">
+        <swiper-item>
+            <image src="cloud://breakfast-2g1m3rj408423bcd.6272-breakfast-2g1m3rj408423bcd-1303848850/微信图片_20201127233831.jpg" class="slide-image" mode="widthFix" />   
+        </swiper-item>
+        <swiper-item>
+            <image src="/pages/src/s1.jpg" class="slide-image" mode="widthFix" />   
+        </swiper-item>
+        <swiper-item>
+            <image src="/pages/src/s3.jpg" class="slide-image" mode="widthFix" />   
+        </swiper-item>
+      </block>
+</swiper>
+<view class="container">
+  <scroll-view class='nav_left' scroll-y='true'>
+    <block wx:for="{{cateItems}}" wx:key="index">
+      <view class="nav_left_items {{curNav==item.cate_id?'active':''}}" bindtap="switchRightTab" data-index='{{index}}' data-id="{{item.cate_id}}">{{item.cate_name}}</view>
+    </block>
+  </scroll-view>
+  <scroll-view class="nav_right" scroll-y="true">
+    <!--如果有数据，才遍历项-->
+    <view wx:if="{{cateItems[curIndex].children.length>0}}">
+      <block wx:for="{{cateItems[curIndex].children}}" wx:key="{{index}}">
+        <view class="nav_right_items">
+        <!--界面跳转 -->
+          <navigator url="../../detail/detail">
+            <image src="{{item.image}}" bindtap="goto"></image>
+            <text>{{item.name}}</text>
+            <text>{{item.text}}</text>
+          </navigator>
+        </view>
+      </block>
+    </view>
+    <!--如果无数据，则显示数据-->
+    <view class="nocate" wx:else>
+      <image src="../../images/without.png"></image>
+      <text>又贵又难吃不推荐</text>
+    </view>
+  </scroll-view>
+</view>

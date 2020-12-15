@@ -1,0 +1,30 @@
+<scroll-view style="height: calc(100% - 50px)" scroll-y="{{true}}">
+  <view style="padding: 10px;border-bottom: 5px solid #ccc5c5;">
+    <view style="display:flex;align-items: center;">
+      <image
+        src="{{contentDetail.avatarUrl}}"
+        style="width:30px;height:30px;" />
+      <view style="margin-left:5px;">{{contentDetail.username}}</view>
+    </view>
+    <view style="">
+      {{contentDetail.content}}</view>
+  </view>
+
+  <block wx:if="{{contentDetail.comment.length > 0}}">
+    <view wx:for="{{contentDetail.comment}}" wx:key="commentList"
+      style="padding: 15px;border-bottom: 1px solid #ccc5c5;">
+      <view style="">
+        {{item.username}}：{{item.comment}}
+      </view>
+    </view>
+  </block>
+  <view wx:else style="text-align:center;">
+    暂无更多
+  </view>
+</scroll-view>
+
+<view
+  style="display:flex;align-items:center;height:50px;box-sizing:border-box;padding:10px;width:100%;position:fixed;bottom: 0;background: white;">
+  <input style="width:550rpx;" placeholder="请输入评论" value="{{saveComment.comment}}" bindinput="onInput" />
+  <button style="width:200rpx;" type="primary" bindtap="onSaveComment">评论</button>
+</view>

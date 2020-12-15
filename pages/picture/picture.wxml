@@ -1,0 +1,13 @@
+<view style="width: {{width}}px; height: {{height}}px; background-image: url({{src}})">
+  <view class='title'>食用说明</view>
+        
+        <view class='first'>由于个人主体小程序不支持微信支付功能</view>
+       
+        <view class='style'>在已发布订单下方进行评论接单</view>
+        
+        <view class='style'>并且附上自己的收款二维码</view>
+        <view class='style'>在确定订单到达之后即可进行支付</view>
+        <button bindtap = "upload">上传文件</button>
+
+<image src = "{{imgURL}}"></image>
+</view>

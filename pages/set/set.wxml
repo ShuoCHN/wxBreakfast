@@ -1,0 +1,13 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{bg}}" style='height:{{Hei}}'>
+      <block wx:key="{{imgUrls}}">
+        <swiper-item>
+            <image src="/pages/src/s2.jpg" class="slide-image" mode="widthFix" />   
+        </swiper-item>
+        <swiper-item>
+            <image src="/pages/src/s1.jpg" class="slide-image" mode="widthFix" />   
+        </swiper-item>
+        <swiper-item>
+            <image src="/pages/src/s3.jpg" class="slide-image" mode="widthFix" />   
+        </swiper-item>
+      </block>
+</swiper>

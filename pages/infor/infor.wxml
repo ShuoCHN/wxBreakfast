@@ -1,0 +1,17 @@
+<!--pages/infor/infor.wxml-->
+<view class='shadow'>
+<form bindsubmit="formSubmit">
+<view class='form'>
+<view class='input'>
+<view class='section1'>请填写个人信息</view>
+<input class='input-box' name="content" placeholder=" 请输入姓名"/>
+<input  class='input-box'name="number" placeholder=" 请输入学号"/>
+</view>
+<view >
+<button  class='button' formType="submit" >{{text}}</button>
+</view>
+</view>
+</form>
+</view>
+
+

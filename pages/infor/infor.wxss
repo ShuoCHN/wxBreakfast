@@ -1,0 +1,272 @@
+.form{
+ margin-top:80rpx;
+  width:650rpx; 
+  
+  height:510rpx; 
+  
+
+  display:flex; /*组件的子组件采用flex布局排列*/
+  
+  flex-direction:column; /*flex布局排列的主方向为纵向，子组件从上到下排列*/
+  
+  justify-content:space-around; /*子组件在主方向上采用space-around方式排列，每个子组件在主方向上的两侧有相等的间隔。*/
+  
+  align-items:center /*子组件在副方向（这里为横向）上居中排列*/
+
+  }
+  
+  .shadow{
+    margin-top:100rpx;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-left:40rpx;
+    margin-right:40rpx;
+    margin-bottom:30rpx;
+    border-radius:20rpx;
+    
+    box-shadow: 0rpx 4rpx 15rpx  #ccc;
+  }
+  
+  .input{
+  
+  width:85%; 
+  }
+  
+  .input-box{
+  
+  height:60rpx;
+  border: 1px solid rgba(0, 0, 0, 0.1) ; /*给class为input-box的组件加上边框，边框宽度为1px，边框样式为实线，边框颜色为黑色。*/
+  border-radius: 40rpx;
+  margin-top: 40rpx /*此组件上方增加80rpx的间隔*/
+  
+  }
+  
+  .checkbox{
+  
+  width:85%; /*class为checkbox的组件宽度为父组件的宽度的85%*/
+  }
+  
+  .checkbox_hint{
+  
+  margin-bottom:80rpx /*此组件下方增加80rpx的间隔*/
+  }
+  
+  .button{
+  background-color: #FF8C69;
+  color: white;
+  border-radius: 40rpx;
+  width:85%;
+  box-shadow: 0px 2px 5px #ccc;
+  }
+  .section1{
+  margin-bottom: 20rpx;
+  
+  font-size: 60rpx;
+  text-align: center;
+  }
+  .sectionTitle{
+  font-size: 80rpx;
+  color:rgb(218, 90, 51);
+  text-align: center;
+  font-weight:bold;
+  font-family:Impact, Haettenschweiler, ‘ArialNarrowBold’, sans-serif;
+  margin-bottom:30rpx;
+  margin-top:30rpx; 
+  }
+  .img{
+  clear:both;
+  display:block;
+  margin:auto;
+  margin-top:100rpx
+  }
+  .button-next{
+  background-color: rgb(218, 90, 51);
+  color: white;
+  margin-right: 20rpx;
+  font-size: 60rpx;
+  width:100%
+  }
+  page {
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .userinfo, .uploader, .tunnel {
+    margin-top: 40rpx;
+    height: 140rpx;
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 300ms ease;
+  }
+  
+  .userinfo {
+    padding-left: 120rpx;
+  }
+  
+  .userinfo-avatar {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: white;
+  }
+  
+  .userinfo-avatar[size] {
+    width: 100rpx;
+  }
+  
+  
+  .userinfo-avatar:after {
+    border: none;
+  }
+  
+  .userinfo-nickname {
+    font-size: 32rpx;
+    color: #007aff;
+    background-color: white;
+    background-size: cover;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 10px;
+  }
+  
+  .userinfo-nickname::after {
+    border: none;
+  }
+  
+  .userinfo-nickname-wrapper {
+    flex: 1;
+  }
+  
+  .uploader, .tunnel {
+    height: auto;
+    padding: 0 0 0 40rpx;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+  
+  .uploader-text, .tunnel-text {
+    width: 100%;
+    line-height: 52px;
+    font-size: 34rpx;
+    color: #007aff;
+  }
+  
+  .uploader-container {
+    width: 100%;
+    height: 400rpx;
+    padding: 20rpx 20rpx 20rpx 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .uploader-image {
+    width: 100%;
+    height: 360rpx;
+  }
+  
+  .tunnel {
+    padding: 0 0 0 40rpx;
+  }
+  
+  .tunnel-text {
+    position: relative;
+    color: #222;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .tunnel-text:first-child {
+    border-top: none;
+  }
+  
+  .tunnel-switch {
+    position: absolute;
+    right: 20rpx;
+    top: -2rpx;
+  }
+  
+  .disable {
+    color: #888;
+  }
+  
+  .service {
+    position: fixed;
+    right: 40rpx;
+    bottom: 40rpx;
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+    background: linear-gradient(#007aff, #0063ce);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: all 300ms ease;
+  }
+  
+  .service-button {
+    position: absolute;
+    top: 40rpx;
+  }
+  
+  .service:active {
+    box-shadow: none;
+  }
+  
+  .request-text {
+    padding: 20rpx 0;
+    font-size: 24rpx;
+    line-height: 36rpx;
+    word-break: break-all;
+  }
+  .button{
+  
+  background-color: greenyellow   
+  }
+  .input{
+  
+  width:85%; 
+  }
+  .button{
+    background-color: #DEB887;
+    color: white;
+    border-radius: 98rpx;
+    width:85%;
+    background: bg_red;
+    box-shadow: 0px 2px 5px  #ccc;
+  }
+  
+  .hover {  
+    background:  rgb(236, 179, 156);
+    }
+  .shadow{
+    background-color: #ffffff;
+    display: inline-block;
+    margin-left:40rpx;
+    margin-right:40rpx;
+    margin-bottom:30rpx;
+    border-radius:20rpx;
+    
+    box-shadow: 0rpx 4rpx 15rpx  #ccc;
+  }
+  
+  
+  

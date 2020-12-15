@@ -1,0 +1,24 @@
+/* pages/picture/picture.wxss */
+.title
+{
+  font-weight:bold;
+  text-align: center;
+  padding-top:80rpx;
+  
+}
+.first
+{
+  text-align: center;
+  padding-top:80rpx;
+  
+}
+.style
+{
+  text-align: center;
+  padding-top:30rpx;
+
+}
+
+ 
+ 
+ 

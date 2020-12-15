@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/main/main",
+    "pages/my/my",
+    "pages/picture/picture",
+    "pages/infor/infor",
+    "pages/us/us",
+    "pages/publishIndex/publishIndex",
+    "pages/publishDetail/publishDetail",
+    "pages/publish/publish"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFE4B5",
+    "navigationBarTitleText": "你的早餐我包了",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#fab27b",
+    "backgroundColor": "#FFE4B5",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pages/src/7.png",
+        "selectedIconPath": "/pages/src/7.png"
+      },
+      {
+        "pagePath": "pages/publishIndex/publishIndex",
+        "text": "发布",
+        "iconPath": "/pages/src/8.png",
+        "selectedIconPath": "/pages/src/8.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/pages/src/9.png",
+        "selectedIconPath": "/pages/src/9.png"
+      }
+    ]
+  }
+}

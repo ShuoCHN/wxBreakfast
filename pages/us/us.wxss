@@ -1,0 +1,19 @@
+.title
+{
+  font-weight:bold;
+  text-align: center;
+  padding-top:80rpx;
+  color:white
+}
+.first
+{font-weight:bold;
+  text-align: center;
+  padding-top:80rpx;
+  color:white
+}
+.style
+{font-weight:bold;
+  text-align: center;
+  padding-top:30rpx;
+  color:white
+}

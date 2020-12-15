@@ -1,0 +1,16 @@
+<!--pages/us/us.wxml-->
+<view style="width: {{width}}px; height: {{height}}px; background-image: url({{src}})">
+  <view class='title'>关于腊香肠和憨憨</view>
+        
+        <view class='first'>两个蠢子在某一天开始了她们的小程序之路。</view>
+       
+        <view class='style'>从一开始啥也不会，</view>
+        
+        <view class='style'>到现在会了一点，</view>
+        <view class='style'>导论教会我们更多的是尝试的勇气与毅力。</view>
+        <view class='style'>虽然这个程序还是不太完善，</view>
+        <view class='style'>我们真的有做出努力。</view>
+        <view class='style'>保持耐心，继续学习。</view>
+        <view class='style'>爱你灵魂有火，心里有光。</view>
+        </view>
+    
